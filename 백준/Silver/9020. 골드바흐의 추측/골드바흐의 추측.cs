@@ -80,6 +80,10 @@ namespace UBC
                 
                 for(int j = i;j<count.Count;j++ )
                 {
+                    if (count[j] > n)
+                    {
+                        break;
+                    }
                     if (count[i] + count[j] == n)
                     {
                         if (Math.Max(count[i], count[j]) - Math.Min(count[i], count[j]) < a-b||!isFirst)
